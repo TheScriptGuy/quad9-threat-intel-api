@@ -1,9 +1,9 @@
 # How to operate this heavy machinery
-# -----------------------------------
  
 ## First create the image from Dockerfile
+`
 docker build -t calvin/quad9-threat-intel:2.3 -f Dockerfile .
-
+`
 
 ## Create the container
 `
