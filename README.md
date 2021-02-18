@@ -15,6 +15,8 @@ Edit the start.sh script and insert your API token and number of connections nee
 
 `
 QUAD9_API_TOKEN=<INSERT API TOKEN>
+`
+`
 QUAD9_CONNECTIONS=<NUMBER OF CONNECETIONS>
 `
 
