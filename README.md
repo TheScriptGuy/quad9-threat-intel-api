@@ -13,12 +13,8 @@ docker create -v /projects/quad9-threat-intel-api/scripts/:/scripts/ -v /quad9-i
 
 Edit the start.sh script and insert your API token and number of connections needing to be made to Quad9
 
-`
-QUAD9_API_TOKEN=<INSERT API TOKEN>
-`
-`
-QUAD9_CONNECTIONS=<NUMBER OF CONNECETIONS>
-`
+* `QUAD9_API_TOKEN=<INSERT API TOKEN>`
+* `QUAD9_CONNECTIONS=<NUMBER OF CONNECETIONS>`
 
 ## To start the container
 `docker start <container name>`
