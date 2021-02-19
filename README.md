@@ -2,19 +2,31 @@
  
 ## First create the image from Dockerfile
 `
-docker build -t calvin/quad9-threat-intel:2.3 -f Dockerfile .
+docker build -t <REPO>/quad9-threat-intel:<version> -f Dockerfile .
 `
+
+## Initial setup
+Create the directory where you want the data to be downloaded to
+`
+mkdir /quad9-intel-data
+`
+
+Assuming scripts directory is in /quad9-threat-intel-api
+
+
 
 ## Create the container
 `
-docker create -v /projects/quad9-threat-intel-api/scripts/:/scripts/ -v /quad9-intel-data/:/quad9-intel-data/ calvin/quad9-threat-intel:2.3 /scripts/start.sh
+docker create -v /quad9-threat-intel-api/scripts/:/scripts/ -v /quad9-intel-data/:/quad9-intel-data/ <REPO>/quad9-threat-intel:<version> /scripts/start.sh
 `
+
 ## Update API Environment variables
 
 Edit the start.sh script and insert your API token and number of connections needing to be made to Quad9
 
 * `QUAD9_API_TOKEN=<INSERT API TOKEN>`
 * `QUAD9_CONNECTIONS=<NUMBER OF CONNECETIONS>`
+
 
 ## To start the container
 `docker start <container name>`
