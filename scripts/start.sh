@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Author         : Nolan Rumble
+# Author         : dryiceza 
 # Date created   : 2020-12-26
 # Version        : 0.01
 # Changelog      : None - first creation
