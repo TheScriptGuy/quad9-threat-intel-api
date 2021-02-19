@@ -1,6 +1,6 @@
 # How to operate this heavy machinery
 
-First and foremost a honory mention of the original Quad9 threat-intel-api https://github.com/Quad9DNS/threat-intel-api
+First and foremost an honorary mention of the original Quad9 threat-intel-api https://github.com/Quad9DNS/threat-intel-api
 
 I used their python script as a starting point and built on from there.
 
