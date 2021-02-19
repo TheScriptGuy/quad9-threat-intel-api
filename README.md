@@ -27,6 +27,14 @@ Edit the start.sh script and insert your API token and number of connections nee
 * `QUAD9_API_TOKEN=<INSERT API TOKEN>`
 * `QUAD9_CONNECTIONS=<NUMBER OF CONNECETIONS>`
 
+## Info to know about the python script
+
+The python script writes the downloaded content into the /quad9-intel-data directory in the filename format of quad9.Year-Month-DayHHour.json
+* quad9.2021-01-01H05.json  
+* quad9.2021-01-01H22.json  
+* quad9.2021-01-02H15.json 
+
+The python script outputs content to files in chunks of 100,000 entries. If the script crashes, or the container stops, the variables in memory are output to disk according to the format above.
 
 ## To start the container
 `docker start <container name>`
@@ -37,5 +45,5 @@ Edit the start.sh script and insert your API token and number of connections nee
 
 
 ### Potential improvements on the horizon...who knows? ¯\_(ツ)_/¯
-* Multiprocessing in addition to multithreading (is this worthwhile given that multiple containers can be spun up to create "multiprocessing".
+* Multiprocessing in addition to multithreading (is this worthwhile given that multiple containers can be spun up to create "multiprocessing"?)
 * other?
