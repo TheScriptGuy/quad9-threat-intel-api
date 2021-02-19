@@ -29,7 +29,10 @@ Edit the start.sh script and insert your API token and number of connections nee
 
 ## Info to know about the python script
 
-The python script writes the downloaded content into the /quad9-intel-data directory in the filename format of quad9.Year-Month-DayHHour.json
+The python script writes the downloaded content into the /quad9-intel-data directory in the filename format of 
+quad9.Year-Month-DayHHour.json
+
+Example file names:
 * quad9.2021-01-01H05.json  
 * quad9.2021-01-01H22.json  
 * quad9.2021-01-02H15.json 
