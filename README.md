@@ -1,5 +1,16 @@
 # How to operate this heavy machinery
+
+First and foremost a honory mention of the original Quad9 threat-intel-api https://github.com/Quad9DNS/threat-intel-api
+
+I used their python script as a starting point and built on from there.
+
+The Docker container things I worked on myself.
+
+I'm open to positive feedback/input.
+
+Now onwards to the instructions! Avante!
  
+
 ## First create the image from Dockerfile
 `
 docker build -t <REPO>/quad9-threat-intel:<version> -f Dockerfile .
