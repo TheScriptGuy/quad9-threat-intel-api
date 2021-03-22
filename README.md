@@ -28,7 +28,9 @@ Assuming scripts directory is in /quad9-threat-intel-api
 
 ## Create the container
 ```bash
-docker create -v /quad9-threat-intel-api/scripts/:/scripts/ -v /quad9-intel-data/:/quad9-intel-data/ <REPO>/quad9-threat-intel:<version> /scripts/start.sh
+docker create -v /quad9-threat-intel-api/scripts/:/scripts/ \
+              -v /quad9-intel-data/:/quad9-intel-data/ \
+              <REPO>/quad9-threat-intel:<version> /scripts/start.sh
 ```
 
 ## Update API Environment variables
