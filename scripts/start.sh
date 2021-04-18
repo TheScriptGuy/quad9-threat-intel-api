@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Author         : dryiceza 
+# Author         : TheScriptGuy 
 # Date created   : 2020-12-26
 # Version        : 0.01
 # Changelog      : None - first creation
